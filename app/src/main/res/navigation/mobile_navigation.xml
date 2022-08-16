@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.hava.dvtweatherapp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/locations"
+        android:name="com.hava.dvtweatherapp.ui.locations.LocationFragment"
+        android:label="@string/menu_locations"
+        tools:layout="@layout/fragment_location" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.hava.dvtweatherapp.ui.favorites.SettingsFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_favorites" />
+</navigation>
